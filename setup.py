@@ -12,7 +12,7 @@ def get_cli_args() -> Dict[str, Any]:
     )
     parser.add_argument(
         '-a', '--artists',
-        help='Artist names to find recommendations from. Comma separated list',
+        help='Artist names to find recommendations from. Comma separated. Double quotes artists with spaces in name',
         nargs='+',
         type=str,
         required=True
