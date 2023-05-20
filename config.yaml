@@ -1,0 +1,7 @@
+creds:
+  path: /Users/david/Documents/creds/apis/spotify.yaml
+
+constants:
+  redirect_uri: http://localhost:8000/callback
+  scopes: ['playlist-modify-private', 'user-library-read', 'user-top-read']
+  country: US
