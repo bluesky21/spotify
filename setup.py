@@ -1,9 +1,11 @@
 import argparse
-from typing import Dict, Any, List
+from typing import Dict, Any
 import logging
-
+import sys
 
 def get_cli_args() -> Dict[str, Any]:
+    # allows for interactive dev
+    sys.argv = [""]
     parser = argparse.ArgumentParser(description='CLI Args for creating Spotify playlists using seed artists')
     parser.add_argument(
         '-p', '--playlist',
@@ -15,7 +17,7 @@ def get_cli_args() -> Dict[str, Any]:
         help='Artist names to find recommendations from. Comma separated. Double quotes artists with spaces in name',
         nargs='+',
         type=str,
-        required=True
+        required=False
     )
     parser.add_argument(
         '--public',
