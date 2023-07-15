@@ -1,5 +1,5 @@
 ## Spotify Playlist Creator
-### Uses list of artists as seeds to get recommendations
+### Uses list of artists to seed tracks added to playlist
 
 #### Requirements
 1. Spotify Developer App
